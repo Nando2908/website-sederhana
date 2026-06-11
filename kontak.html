@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak & Sosmed | BioDataPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">👤 BioDataPro</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Biodata Diri</a></li>
+                <li><a href="pendidikan.html">Riwayat Pendidikan</a></li>
+                <li><a href="kontak.html" class="active">Kontak & Sosmed</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>📞 Kontak & Media Sosial</h1>
+            <p>Fungsi: Informasi kontak, alamat, dan tautan sosial media</p>
+            
+            <div class="card">
+                <!-- Kontak Utama -->
+                <div class="contact-grid">
+                    <div class="contact-section">
+                        <h3>📱 Kontak Utama</h3>
+                        <div class="info-group">
+                            <label>📧 Email:</label>
+                            <input type="email" id="email" value="ahmad.fadillah@email.com" class="editable-input">
+                        </div>
+                        <div class="info-group">
+                            <label>📞 Telepon:</label>
+                            <input type="tel" id="telepon" value="+62 812 3456 7890" class="editable-input">
+                        </div>
+                        <div class="info-group">
+                            <label>💬 WhatsApp:</label>
+                            <input type="tel" id="whatsapp" value="+62 812 3456 7890" class="editable-input">
+                        </div>
+                    </div>
+                    
+                    <div class="contact-section">
+                        <h3>📍 Alamat</h3>
+                        <div class="info-group">
+                            <label>Alamat Lengkap:</label>
+                            <textarea id="alamat" rows="3" class="editable-textarea">Jl. Merdeka No. 123, RT 01/RW 02, Kel. Kebon Jeruk, Kec. Tanah Abang, Jakarta Pusat, 10150</textarea>
+                        </div>
+                        <div class="info-group">
+                            <label>Kode Pos:</label>
+                            <input type="text" id="kodepos" value="10150" class="editable-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="social-section">
+                    <h3>🌐 Media Sosial</h3>
+                    <div class="social-links">
+                        <div class="social-item">
+                            <span class="social-icon">📘</span>
+                            <input type="url" id="facebook" placeholder="Facebook URL" value="https://facebook.com/ahmad.fadillah">
+                        </div>
+                        <div class="social-item">
+                            <span class="social-icon">📷</span>
+                            <input type="url" id="instagram" placeholder="Instagram URL" value="https://instagram.com/ahmadfadillah">
+                        </div>
+                        <div class="social-item">
+                            <span class="social-icon">🐦</span>
+                            <input type="url" id="twitter" placeholder="Twitter URL" value="https://twitter.com/ahmadf">
+                        </div>
+                        <div class="social-item">
+                            <span class="social-icon">💼</span>
+                            <input type="url" id="linkedin" placeholder="LinkedIn URL" value="https://linkedin.com/in/ahmad-fadillah">
+                        </div>
+                        <div class="social-item">
+                            <span class="social-icon">💻</span>
+                            <input type="url" id="github" placeholder="GitHub URL" value="https://github.com/ahmadfadillah">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Preview Card Kontak -->
+                <div class="contact-preview">
+                    <h3>📇 Preview Kartu Kontak</h3>
+                    <div class="vcard" id="vcardPreview">
+                        <div class="vcard-name">Ahmad Fadillah</div>
+                        <div class="vcard-email">ahmad.fadillah@email.com</div>
+                        <div class="vcard-phone">+62 812 3456 7890</div>
+                        <div class="vcard-social">
+                            <span>📘</span> <span>📷</span> <span>💼</span> <span>💻</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="saveContactBtn" class="btn-primary">💾 Simpan Kontak</button>
+                    <button id="resetContactBtn" class="btn-secondary">🔄 Reset</button>
+                    <button id="copyVcardBtn" class="btn-info">📋 Copy vCard</button>
+                    <button id="shareContactBtn" class="btn-success">📤 Bagikan</button>
+                </div>
+                
+                <div id="contactNotification" class="notification hidden">
+                    ✅ Kontak berhasil disimpan!
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 BioDataPro | Responsive Design | Data tersimpan di localStorage</p>
+        </footer>
+    </div>
+
+    <script src="kontak.js"></script>
+</body>
+</html>

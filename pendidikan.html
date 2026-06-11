@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Pendidikan | BioDataPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">👤 BioDataPro</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Biodata Diri</a></li>
+                <li><a href="pendidikan.html" class="active">Riwayat Pendidikan</a></li>
+                <li><a href="kontak.html">Kontak & Sosmed</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>🎓 Riwayat Pendidikan</h1>
+            <p>Fungsi: Kelola data pendidikan formal, non-formal, dan skill</p>
+            
+            <div class="card">
+                <!-- Pendidikan Formal -->
+                <div class="section-title">
+                    <h3>📚 Pendidikan Formal</h3>
+                    <button id="addFormalBtn" class="btn-small">+ Tambah</button>
+                </div>
+                <div id="formalEducationList" class="education-list"></div>
+                
+                <!-- Pendidikan Non-Formal -->
+                <div class="section-title">
+                    <h3>🏆 Sertifikasi & Pelatihan</h3>
+                    <button id="addNonFormalBtn" class="btn-small">+ Tambah</button>
+                </div>
+                <div id="nonFormalList" class="education-list"></div>
+                
+                <!-- Skills -->
+                <div class="section-title">
+                    <h3>⚡ Kemampuan (Skills)</h3>
+                    <button id="addSkillBtn" class="btn-small">+ Tambah Skill</button>
+                </div>
+                <div id="skillsContainer" class="skills-container"></div>
+                
+                <!-- Ringkasan -->
+                <div class="summary-card">
+                    <h3>📊 Ringkasan</h3>
+                    <div class="summary-stats">
+                        <div>🎓 Total Pendidikan Formal: <strong id="totalFormal">0</strong></div>
+                        <div>🏅 Total Sertifikasi: <strong id="totalNonFormal">0</strong></div>
+                        <div>💡 Total Skills: <strong id="totalSkills">0</strong></div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="saveEducationBtn" class="btn-primary">💾 Simpan Semua</button>
+                    <button id="resetEducationBtn" class="btn-secondary">🔄 Reset Default</button>
+                </div>
+                
+                <div id="eduNotification" class="notification hidden">
+                    ✅ Data pendidikan berhasil disimpan!
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 BioDataPro | Responsive Design | Data tersimpan di localStorage</p>
+        </footer>
+    </div>
+
+    <script src="pendidikan.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Biodata Diri | Profil Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">👤 BioDataPro</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Biodata Diri</a></li>
+                <li><a href="pendidikan.html">Riwayat Pendidikan</a></li>
+                <li><a href="kontak.html">Kontak & Sosmed</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>📋 Biodata Diri</h1>
+            <p>Fungsi: Menampilkan informasi pribadi lengkap dengan foto profil & statistik</p>
+            
+            <div class="card">
+                <div class="profile-container">
+                    <div class="profile-avatar">
+                        <div class="avatar-placeholder" id="avatarPreview">
+                            <span>👨‍💻</span>
+                        </div>
+                        <button id="changeAvatarBtn" class="btn-icon">🖼️ Ganti Avatar</button>
+                        <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+                    </div>
+                    
+                    <div class="profile-info">
+                        <div class="info-group">
+                            <label>Nama Lengkap:</label>
+                            <input type="text" id="namaLengkap" value="Ahmad Fadillah" class="editable-input">
+                        </div>
+                        <div class="info-group">
+                            <label>Nama Panggilan:</label>
+                            <input type="text" id="namaPanggilan" value="Ahmad" class="editable-input">
+                        </div>
+                        <div class="info-group">
+                            <label>Tempat, Tanggal Lahir:</label>
+                            <input type="text" id="ttl" value="Jakarta, 15 Mei 1998" class="editable-input">
+                        </div>
+                        <div class="info-group">
+                            <label>Jenis Kelamin:</label>
+                            <select id="jenisKelamin" class="editable-select">
+                                <option value="Laki-laki" selected>Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="info-group">
+                            <label>Golongan Darah:</label>
+                            <select id="goldar" class="editable-select">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="AB">AB</option>
+                                <option value="O" selected>O</option>
+                            </select>
+                        </div>
+                        <div class="info-group">
+                            <label>Agama:</label>
+                            <input type="text" id="agama" value="Islam" class="editable-input">
+                        </div>
+                        <div class="info-group">
+                            <label>Status:</label>
+                            <select id="status" class="editable-select">
+                                <option value="Belum Menikah" selected>Belum Menikah</option>
+                                <option value="Menikah">Menikah</option>
+                                <option value="Cerai">Cerai</option>
+                            </select>
+                        </div>
+                        <div class="info-group">
+                            <label>Pekerjaan:</label>
+                            <input type="text" id="pekerjaan" value="Web Developer" class="editable-input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎂</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Usia</span>
+                            <span class="stat-value" id="usiaDisplay">-- tahun</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Status</span>
+                            <span class="stat-value" id="statusDisplay">Belum Menikah</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💼</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Pekerjaan</span>
+                            <span class="stat-value" id="pekerjaanDisplay">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="saveBioBtn" class="btn-primary">💾 Simpan Biodata</button>
+                    <button id="resetBioBtn" class="btn-secondary">🔄 Reset</button>
+                    <button id="exportBioBtn" class="btn-success">📄 Export PDF</button>
+                </div>
+                
+                <div id="saveNotification" class="notification hidden">
+                    ✅ Biodata berhasil disimpan!
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 BioDataPro | Responsive Design | Data tersimpan di localStorage</p>
+        </footer>
+    </div>
+
+    <script src="biodata.js"></script>
+</body>
+</html>
